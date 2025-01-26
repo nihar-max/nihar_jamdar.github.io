@@ -6,13 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Portfolio Template</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <script>
         // Toggle Functionality for Hamburger Menu
         function toggleMenu() {
             const aside = document.querySelector('.aside');
             aside.classList.toggle('open');
         }
+
+        // Close Menu When Clicking on a Link
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const aside = document.querySelector('.aside');
+                    aside.classList.remove('open');
+                });
+            });
+        });
     </script>
+
     <style>
         .aside {
             width: 270px;
