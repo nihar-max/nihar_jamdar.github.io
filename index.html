@@ -383,7 +383,7 @@
             </div>
 
             <div class="portfolio-item padd-15" data-category="Case Studies">
-                <h5>PERSONALISED CAMCER DIAGNOSIS</h5>
+                <h5>PERSONALISED CANCER DIAGNOSIS</h5>
                 <img src="images/cancer.jpg" height="200" width="300" class="img-responsive" alt="Personalized Cancer Diagnosisn">
             </div>      
 
@@ -524,6 +524,70 @@
                 </div>
             </section>
             <!-- Blog Section End-->
+<!-- Contact Section -->
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Get in Touch</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-content padd-15">
+                <form id="contact-form" onsubmit="sendEmail(event)">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" required><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email" required><br>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city" required><br>
+
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="user_state" required><br>
+
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="user_country" required><br>
+
+                    <label for="status">Are you?</label>
+                    <select id="status" name="user_status" required>
+                        <option value="Fresher">Fresher</option>
+                        <option value="Experienced">Experienced</option>
+                    </select><br>
+
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" name="user_phone" required><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EmailJS Integration Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function () {
+        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user_id
+    })();
+
+    function sendEmail(e) {
+        e.preventDefault(); // Prevent form from refreshing the page
+
+        emailjs
+            .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target)
+            .then(
+                (result) => {
+                    alert("Message sent successfully!");
+                },
+                (error) => {
+                    alert("Failed to send the message. Please try again.");
+                }
+            );
+    }
+</script>
 
 
         </div>
