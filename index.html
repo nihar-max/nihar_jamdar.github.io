@@ -143,39 +143,29 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <!-- Add the navigation bar here -->
-    <nav style="background: linear-gradient(135deg, #1E88E5, #42A5F5); padding: 10px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+   <!-- Navigation Bar -->
+<nav style="background: linear-gradient(135deg, #1E88E5, #42A5F5); padding: 10px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
     <ul id="nav-menu" style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
         <li style="margin: 0;">
-            <a href="#home" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                Home
-            </a>
+            <a href="#home" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Home</a>
         </li>
         <li style="margin: 0;">
-            <a href="#about" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                About
-            </a>
+            <a href="#about" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">About</a>
         </li>
         <li style="margin: 0;">
-            <a href="#portfolio" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                Case Studies
-            </a>
+            <a href="#portfolio" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Case Studies</a>
         </li>
         <li style="margin: 0;">
-            <a href="#blog" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                Blog
-            </a>
+            <a href="#blog" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Blog</a>
         </li>
         <li style="margin: 0;">
-            <a href="#contact" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                Contact
-            </a>
+            <a href="#contact" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Contact</a>
         </li>
     </ul>
 </nav>
 
 <style>
-    /* Default hover effect */
+    /* Hover effect for links */
     nav ul li a:hover {
         background: rgba(255, 255, 255, 0.2);
         border-radius: 8px;
@@ -186,6 +176,7 @@
     /* Media Query for Mobile Screens */
     @media (max-width: 768px) {
         nav {
+            position: relative; /* Removes fixed position on mobile */
             padding: 10px;
         }
 
