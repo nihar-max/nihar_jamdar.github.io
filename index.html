@@ -358,12 +358,7 @@
                         <p style="font-size: 14px; color: #555;">Access recorded sessions and learning materials anytime, anywhere, to study at your own pace.</p>
                     </div>
                 </div>
-                  <div style="background: #fff; border-radius: 10px; padding: 20px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s;">
-                <div style="font-size: 30px; color: #1E88E5; margin-bottom: 10px;">🌐</div>
-                <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">Collaborative Community</h3>
-                <p style="font-size: 14px; color: #555;">Receive dedicated guidance and support, ensuring a tailored learning experience to help you succeed.</p>
-            </div>
-        </div>
+        
 
             </div>
         </div>
@@ -373,36 +368,32 @@
             <h2 style="font-size: 28px; font-weight: bold; color: #2c3e50;">Curriculum</h2>
         </div>
         <div style="max-width: 800px; margin: 0 auto;">
-            <!-- Python Basics -->
-            <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
-                <button onclick="toggleContent('Introduction to Data Science')" style="width: 100%; text-align: left; padding: 10px; background: #fff;">
-                    Introduction to Data Science
-                </button>
-                <div id="Introduction to Data Science" style="display: none; padding: 10px; background: #f9f9f9;">
-                    What is Data Science?
-                </div>
-                <div id="Introduction to Data Science" style="display: none; padding: 10px; background: #f9f9f9;">
-                    Real-world applications of Data Science
-                </div>
-                <div id="Introduction to Data Science" style="display: none; padding: 10px; background: #f9f9f9;">
-                    Overview of the tools and technologies used
-                </div>
+            <!-- Introduction to Data Science -->
+            <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+            <button onclick="toggleContent('Introduction to Data Science')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+                Introduction to Data Science
+                <span style="float: right;">&#9654;</span>
+            </button>
+            <div id="Introduction to Data Science" style="display: none; padding: 15px; background-color: #f9f9f9;">
+                <p style="margin: 0; font-size: 16px; color: #555;">What is Data Science?</p>
             </div>
-            <!-- Python Basics -->
-            <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
-                <button onclick="toggleContent('python')" style="width: 100%; text-align: left; padding: 10px; background: #fff;">
-                    Python
-                </button>
-                <div id="python" style="display: none; padding: 10px; background: #f9f9f9;">
-                    Python Basics
-                </div>
-                <div id="python" style="display: none; padding: 10px; background: #f9f9f9;">
-                    Data Structures in Python (Lists, Tuples, Sets, and Dictionaries)
-                </div>
-                <div id="python" style="display: none; padding: 10px; background: #f9f9f9;">
-                    Data Structures in Python (Lists, Tuples, Sets, and Dictionaries)
-                </div>
+             <div id="Introduction to Data Science" style="display: none; padding: 15px; background-color: #f9f9f9;">
+                <p style="margin: 0; font-size: 16px; color: #555;">Real-world applications of Data Science</p>
             </div>
+            <div id="Introduction to Data Science" style="display: none; padding: 15px; background-color: #f9f9f9;">
+                <p style="margin: 0; font-size: 16px; color: #555;">Overview of the tools and technologies used</p>
+            </div>
+        </div>
+            <!-- Python Basics -->
+           <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+            <button onclick="toggleContent('sqlTopics')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+                SQL
+                <span style="float: right;">&#9654;</span>
+            </button>
+            <div id="sqlTopics" style="display: none; padding: 15px; background-color: #f9f9f9;">
+                <p style="margin: 0; font-size: 16px; color: #555;">Basics, Joins, Subqueries, CTEs, Window Functions</p>
+            </div>
+        </div>
          <!-- SQL Module -->
         <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
             <button onclick="toggleContent('sqlTopics')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
