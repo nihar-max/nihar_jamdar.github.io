@@ -424,24 +424,28 @@
         </p>
 
         <!-- Founder Section -->
-       <div style="margin-top: 40px; display: flex; align-items: center; gap: 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+       <div style="margin-top: 40px; display: flex; align-items: center; gap: 20px; background: linear-gradient(135deg, #e0f7fa, #ffffff); padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden;">
+    <!-- Animated Background Circles -->
+    <div style="position: absolute; top: -50px; left: -50px; width: 120px; height: 120px; background: #81d4fa; border-radius: 50%; opacity: 0.5; animation: moveUpDown 6s ease-in-out infinite;"></div>
+    <div style="position: absolute; bottom: -50px; right: -50px; width: 100px; height: 100px; background: #039be5; border-radius: 50%; opacity: 0.4; animation: moveLeftRight 8s ease-in-out infinite;"></div>
+
     <!-- Image Section -->
-    <div style="flex: 1; text-align: center;">
+    <div style="flex: 1; text-align: center; z-index: 1;">
         <img src="images/nihar.jpeg" alt="Nihar Jamdar" 
             style="width: 120px; height: auto; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
         <!-- Social Media Links -->
         <div style="margin-top: 10px;">
-            <a href="https://github.com/nihar-max" target="_blank" style="margin-right: 15px; text-decoration: none; color: #555;">
-                <img src="images/g.png" alt="GitHub" style="width: 30px; height: 30px;">
+            <a href="https://github.com/YourGitHubUsername" target="_blank" style="margin-right: 15px; text-decoration: none; color: #555;">
+                <img src="images/github-icon.png" alt="GitHub" style="width: 30px; height: 30px;">
             </a>
-            <a href="https://www.linkedin.com/in/nihar-jamdar/" target="_blank" style="text-decoration: none; color: #555;">
-                <img src="images/l.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+            <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank" style="text-decoration: none; color: #555;">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 30px; height: 30px;">
             </a>
         </div>
     </div>
 
     <!-- Text Section -->
-    <div style="flex: 2;">
+    <div style="flex: 2; z-index: 1;">
         <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Nihar Jamdar</h2>
         <h3 style="font-size: 20px; color: #FF5722; margin-bottom: 20px;">Founder & Data Analyst at Merkle</h3>
         <p style="line-height: 1.8; color: #555;">
@@ -454,6 +458,29 @@
         </p>
     </div>
 </div>
+
+<!-- Add CSS Animations -->
+<style>
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes moveLeftRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+}
+</style>
+
+
 
 
         <!-- Master Skills Section -->
