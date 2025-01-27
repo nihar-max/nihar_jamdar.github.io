@@ -58,15 +58,15 @@
         }
 
         .home img {
-            width: 300px;
+            width: 250px;
             height: auto;
-            border-radius: 50%;
+            border-radius: 10px;
             margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .portfolio img, .blog img {
-            width: 250px;
+            width: 200px;
             height: auto;
             border-radius: 10px;
             margin: 10px;
@@ -121,13 +121,21 @@
         }
 
         .feature img {
-            width: 60px;
+            width: 50px;
             margin-bottom: 15px;
+        }
+
+        .case-studies img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         @media (max-width: 768px) {
             .portfolio img, .blog img {
-                width: 200px;
+                width: 150px;
             }
 
             .home img {
@@ -141,6 +149,10 @@
 
             .feature {
                 width: 90%;
+            }
+
+            .case-studies img {
+                width: 120px;
             }
         }
     </style>
@@ -198,7 +210,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="case-studies">
         <h2>Case Studies</h2>
         <div>
             <img src="images/bitcoin.jpg" alt="Bitcoin Price Prediction">
