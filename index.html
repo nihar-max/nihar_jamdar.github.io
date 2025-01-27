@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-color: #f9f9f9;
+            background: linear-gradient(180deg, #ffffff, #f3f4f6);
         }
 
         nav {
@@ -23,6 +23,7 @@
             width: 100%;
             top: 0;
             z-index: 10;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
@@ -41,6 +42,7 @@
             color: white;
             text-decoration: none;
             font-size: 18px;
+            font-weight: bold;
         }
 
         nav ul li a:hover {
@@ -53,23 +55,29 @@
         }
 
         .home {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            background: linear-gradient(135deg, #1E88E5, #29B6F6);
+            color: white;
             padding: 100px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .home img {
-            width: 300px;
+            width: 200px;
             height: auto;
             border-radius: 50%;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
         .portfolio img, .blog img {
-            width: 250px;
+            width: 100%;
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
-            margin: 10px;
+            margin: 20px auto;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -97,6 +105,19 @@
             background: #E64A19;
         }
 
+        .portfolio, .blog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio-item, .blog-item {
+            max-width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         footer {
             background: #1E88E5;
             color: white;
@@ -106,11 +127,11 @@
 
         @media (max-width: 768px) {
             .portfolio img, .blog img {
-                width: 200px;
+                width: 100%;
             }
 
             .home img {
-                width: 200px;
+                width: 150px;
             }
         }
     </style>
@@ -151,33 +172,43 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
         <h2>Case Studies</h2>
-        <div>
-            <img src="images/bitcoin.jpg" alt="Bitcoin Price Prediction">
-            <p>Bitcoin Price Prediction</p>
-            <img src="images/ECG_IMAGE.jpg" alt="Anomaly Detection of ECG">
-            <p>Anomaly Detection of ECG</p>
-            <img src="images/portfolio/TEDx-logo-image.jpg" alt="TED Talk Views Prediction">
-            <p>TED Talk Views Prediction</p>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="images/bitcoin.jpg" alt="Bitcoin Price Prediction">
+                <p>Bitcoin Price Prediction</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/ECG_IMAGE.jpg" alt="Anomaly Detection of ECG">
+                <p>Anomaly Detection of ECG</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/portfolio/TEDx-logo-image.jpg" alt="TED Talk Views Prediction">
+                <p>TED Talk Views Prediction</p>
+            </div>
         </div>
     </section>
 
     <!-- Blog Section -->
     <section id="blog">
         <h2>Latest Blogs</h2>
-        <div>
-            <img src="images/portfolio/netflix-logo.png" alt="Netflix Data Analysis">
-            <h4>Netflix Data Analysis using Python</h4>
-            <p><a href="https://niharjamdar.medium.com/netflix-data-analysis-using-python-5ac56dd5cda1">Read More</a></p>
-            <img src="images/portfolio/nlp.jpg" alt="TF-IDF">
-            <h4>TF-IDF: Term Frequency and Inverse Document Frequency</h4>
-            <p><a href="https://niharjamdar.medium.com/tf-idf-term-frequency-and-inverse-document-frequency-56a0289d2fb6">Read More</a></p>
+        <div class="blog">
+            <div class="blog-item">
+                <img src="images/portfolio/netflix-logo.png" alt="Netflix Data Analysis">
+                <h4>Netflix Data Analysis using Python</h4>
+                <p><a href="https://niharjamdar.medium.com/netflix-data-analysis-using-python-5ac56dd5cda1">Read More</a></p>
+            </div>
+            <div class="blog-item">
+                <img src="images/portfolio/nlp.jpg" alt="TF-IDF">
+                <h4>TF-IDF: Term Frequency and Inverse Document Frequency</h4>
+                <p><a href="https://niharjamdar.medium.com/tf-idf-term-frequency-and-inverse-document-frequency-56a0289d2fb6">Read More</a></p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScquiIyJs4PCihol-JZmnb3CdcM0fzaSdeIdO7KlqPSxgeiTg/viewform?usp=sharing" style="width: 100%; height: 600px; border: none;"></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScquiIyJs4PCihol-JZmnb3CdcM0fzaSdeIdO7KlqPSxgeiTg/viewform?usp=sharing" style="width: 100%; height: 600px; border: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"></iframe>
     </section>
 
     <!-- Footer -->
