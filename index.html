@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color: #f9f9f9;
         }
 
         nav {
@@ -56,19 +57,28 @@
             padding: 100px 20px;
         }
 
-        .portfolio img, .blog img {
+        .home img {
             width: 300px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio img, .blog img {
+            width: 250px;
             height: auto;
             border-radius: 10px;
             margin: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        footer {
-            background: #1E88E5;
-            color: white;
-            padding: 10px;
-            text-align: center;
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
         }
 
         .cta a {
@@ -80,10 +90,28 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
 
         .cta a:hover {
             background: #E64A19;
+        }
+
+        footer {
+            background: #1E88E5;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio img, .blog img {
+                width: 200px;
+            }
+
+            .home img {
+                width: 200px;
+            }
         }
     </style>
 </head>
@@ -101,7 +129,7 @@
 
     <!-- Home Section -->
     <section id="home" class="home">
-        <img src="images/loggggooo.png" alt="InsightEdge Logo" style="width: 200px; height: auto; border-radius: 50%;">
+        <img src="images/loggggooo.png" alt="InsightEdge Logo">
         <h1>Welcome to InsightEdge</h1>
         <p>Empowering Minds, Unlocking Insights</p>
         <div class="cta">
@@ -114,7 +142,7 @@
     <section id="about">
         <h2>About InsightEdge</h2>
         <p>InsightEdge is a premier data science academy dedicated to transforming learners into industry-ready professionals.</p>
-        <img src="images/nihar.jpeg" alt="Nihar Jamdar">
+        <img src="images/nihar.jpeg" alt="Nihar Jamdar" style="width: 200px; height: auto; border-radius: 10px; margin: 20px auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <h3>Nihar Jamdar</h3>
         <h4>Founder & Data Analyst at Merkle</h4>
         <p>Nihar has over 4 years of experience in Python, SQL, PySpark, and Machine Learning frameworks.</p>
