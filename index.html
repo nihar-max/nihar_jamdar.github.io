@@ -8,137 +8,136 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background-color: #f9f9f9;
-        }
-
-        nav {
-            background-color: #1E88E5;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .portfolio img, .blog img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-            margin: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3, h4 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-        }
-
-        .cta a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background: #FF5722;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .cta a:hover {
-            background: #E64A19;
-        }
-
-        footer {
-            background: #1E88E5;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .feature {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 200px;
-        }
-
-        .feature img {
-            width: 50px;
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-            .portfolio img, .blog img {
-                width: 150px;
-            }
-
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .feature {
-                width: 90%;
-            }
-        }
-    </style>
-    <style>
+    /* General Body Styles */
     body {
-        background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: linear-gradient(135deg, #f3f4f6, #e5e7eb); /* Added gradient background */
     }
 
+    /* Navigation Bar */
+    nav {
+        background-color: #1E88E5;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Section Styles */
     section {
-        padding: 50px 20px;
+        padding: 50px 20px; /* Adjusted padding for consistency */
         margin: 20px 0;
         border-radius: 10px;
         background: #fff;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Portfolio and Blog Image Styles */
+    .portfolio img, .blog img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+        color: #333;
+    }
+
+    p {
+        color: #555;
+    }
+
+    /* Call-to-Action Buttons */
+    .cta a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background: #FF5722;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta a:hover {
+        background: #E64A19;
+        transform: scale(1.05); /* Added hover scaling for better interactivity */
+    }
+
+    /* Footer */
+    footer {
+        background: #1E88E5;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Features Section */
+    .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .feature {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 200px; /* Fixed size for consistency */
+    }
+
+    .feature img {
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .portfolio img, .blog img {
+            width: 150px; /* Reduced size for smaller screens */
+        }
+
+        .features {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature {
+            width: 90%; /* Use full width for smaller devices */
+        }
     }
 </style>
 </head>
