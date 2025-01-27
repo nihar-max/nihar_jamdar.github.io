@@ -430,18 +430,103 @@
         </ul>
     </div>
 </div> 
-         <!-- Statistics for Data Science -->
+         <!-- Business Analytics -->
         <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
-    <button onclick="toggleContent('stats')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
-        Statistics for Data Science
+    <button onclick="toggleContent('bi')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+        Business Analytics
         <span style="float: right;">&#9654;</span>
     </button>
-    <div id="stats" style="display: none; padding: 15px; background-color: #f9f9f9;">
+    <div id="bi" style="display: none; padding: 15px; background-color: #f9f9f9;">
         <ul style="list-style-type: disc; padding-left: 20px; margin: 0; font-size: 16px; color: #555;">
-            <li>Descriptive Statistics</li>
-            <li>Probability Basics</li>
-            <li>Hypothesis Testing</li>
-            <li>Correlation and Regression Analysis</li>
+            <li>Understanding Business Problems</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Data Cleaning</li>
+            <li>Feature Engineering & Feature Selection</li>
+        </ul>
+    </div>
+</div>
+        <!-- Machine Learning -->
+        <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <button onclick="toggleContent('ML')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+        Machine Learning
+        <span style="float: right;">&#9654;</span>
+    </button>
+    <div id="ML" style="display: none; padding: 15px; background-color: #f9f9f9;">
+        <ul style="list-style-type: disc; padding-left: 20px; margin: 0; font-size: 16px; color: #555;">
+            <li>Supervised vs. Unsupervised Learning</li>
+            <li>Linear and Logistic Regression</li>
+            <li>Decision Trees and Random Forest</li>
+            <li>Support Vector Machines (SVM)</li>
+            <li>Clustering Algorithms (K-Means, Hierarchical Clustering)</li>
+            <li>Model Evaluation Metrics (Accuracy, Precision, Recall, F1-Score, ROC-AUC)</li>
+            <li>Machine Learning Real World Case Study</li>
+        </ul>
+    </div>
+</div>
+        <!-- Natural Language Processing (NLP) -->
+        <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <button onclick="toggleContent('NLP')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+        Natural Language Processing
+        <span style="float: right;">&#9654;</span>
+    </button>
+    <div id="NLP" style="display: none; padding: 15px; background-color: #f9f9f9;">
+        <ul style="list-style-type: disc; padding-left: 20px; margin: 0; font-size: 16px; color: #555;">
+            <li>Introduction to NLP</li>
+            <li>Tokenization, Lemmatization, and Stemming</li>
+            <li>Bag-of-Words and TF-IDF</li>
+            <li>Text Preprocessing Techniques</li>
+            <li>Sentiment Analysis</li>
+            <li>NLP Real World Case Study</li>
+        </ul>
+    </div>
+</div>
+         <!-- Introduction to Deep Learning -->
+        <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <button onclick="toggleContent('DL')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+        Introduction to Deep Learning
+        <span style="float: right;">&#9654;</span>
+    </button>
+    <div id="DL" style="display: none; padding: 15px; background-color: #f9f9f9;">
+        <ul style="list-style-type: disc; padding-left: 20px; margin: 0; font-size: 16px; color: #555;">
+            <li>Overview of Artificial Neural Networks (ANN)</li>
+            <li>Differences between Machine Learning and Deep Learning</li>
+            <li>Perceptron and Activation Functions</li>
+            <li>Forward Propagation and Backward Propagation</li>
+            <li>Setting up TensorFlow/Keras</li>
+            <li>Convolutional Neural Networks (CNN) Basics</li>
+            <li>Bitcoin Price Time-Series Forecasting Case Study using RNN/LSTM</li>
+        </ul>
+    </div>
+</div>
+            <!-- Case Studies and Projects-->
+        <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <button onclick="toggleContent('cs')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+        Case Studies and Projects
+        <span style="float: right;">&#9654;</span>
+    </button>
+    <div id="sc" style="display: none; padding: 15px; background-color: #f9f9f9;">
+        <ul style="list-style-type: disc; padding-left: 20px; margin: 0; font-size: 16px; color: #555;">
+            <li>BITCOIN PRICE PREDICTION</li>
+            <li>TED TALK VIEWS PREDICTION</li>
+            <li>PERSONALISED CANCER DIAGNOSIS</li>
+            <li>LENDING CLUB LOAN DEFAULTERS PREDICTION</li>
+            <li>DRUG PRESCRIPTION USING REVIEWS</li>
+        </ul>
+    </div>
+</div>
+             <!-- Career Preparation and Job Search Guidance-->
+        <div style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <button onclick="toggleContent('cb')" style="width: 100%; padding: 15px; font-size: 18px; background: #fff; text-align: left; border: none; outline: none; cursor: pointer; font-weight: bold; color: #333;">
+        Career Preparation and Job Search Guidance
+        <span style="float: right;">&#9654;</span>
+    </button>
+    <div id="cb" style="display: none; padding: 15px; background-color: #f9f9f9;">
+        <ul style="list-style-type: disc; padding-left: 20px; margin: 0; font-size: 16px; color: #555;">
+            <li>Resume Building</li>
+            <li>LinkedIn Profile Building</li>
+            <li>Job Search on Naukri & Other Platforms</li>
+            <li>Interview Preparation</li>
+            <li>Training Materials</li>
         </ul>
     </div>
 </div>
