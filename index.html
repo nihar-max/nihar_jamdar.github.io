@@ -52,19 +52,6 @@
             text-align: center;
         }
 
-        .home {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 100px 20px;
-        }
-
-        .home img {
-            width: 250px;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
         .portfolio img, .blog img {
             width: 200px;
             height: auto;
@@ -117,7 +104,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 250px;
+            width: 200px;
         }
 
         .feature img {
@@ -125,21 +112,9 @@
             margin-bottom: 15px;
         }
 
-        .case-studies img {
-            width: 150px;
-            height: auto;
-            border-radius: 10px;
-            margin: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
         @media (max-width: 768px) {
             .portfolio img, .blog img {
                 width: 150px;
-            }
-
-            .home img {
-                width: 200px;
             }
 
             .features {
@@ -149,10 +124,6 @@
 
             .feature {
                 width: 90%;
-            }
-
-            .case-studies img {
-                width: 120px;
             }
         }
     </style>
@@ -170,8 +141,7 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="home">
-        <img src="images/loggggooo.png" alt="InsightEdge Logo">
+    <section id="home">
         <h1>Welcome to InsightEdge</h1>
         <p>Empowering Minds, Unlocking Insights</p>
         <p>Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in tech.</p>
@@ -179,38 +149,20 @@
             <a href="#about">Learn More</a>
             <a href="#contact">Get in Touch</a>
         </div>
-
-        <div class="features">
-            <div class="feature">
-                <img src="images/realworld.png" alt="Real-World Projects">
-                <h3>Real-World Projects</h3>
-                <p>Work on industry-relevant projects to gain hands-on experience.</p>
-            </div>
-            <div class="feature">
-                <img src="images/mentorship.png" alt="Mentorship">
-                <h3>Expert Mentorship</h3>
-                <p>Learn directly from industry experts and seasoned professionals.</p>
-            </div>
-            <div class="feature">
-                <img src="images/certified.png" alt="Certification">
-                <h3>Certification</h3>
-                <p>Earn a recognized certificate to showcase your expertise.</p>
-            </div>
-        </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About InsightEdge</h2>
         <p>InsightEdge is a premier data science academy dedicated to transforming learners into industry-ready professionals.</p>
-        <img src="images/nihar.jpeg" alt="Nihar Jamdar" style="width: 200px; height: auto; border-radius: 10px; margin: 20px auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <img src="images/nihar.jpeg" alt="Nihar Jamdar" style="width: 150px; height: auto; border-radius: 10px; margin: 20px auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <h3>Nihar Jamdar</h3>
         <h4>Founder & Data Analyst at Merkle</h4>
         <p>Nihar has over 4 years of experience in Python, SQL, PySpark, and Machine Learning frameworks.</p>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="case-studies">
+    <section id="portfolio">
         <h2>Case Studies</h2>
         <div>
             <img src="images/bitcoin.jpg" alt="Bitcoin Price Prediction">
