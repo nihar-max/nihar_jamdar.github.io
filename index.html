@@ -145,43 +145,69 @@
     <!-- Navigation Bar -->
     <!-- Add the navigation bar here -->
     <nav style="background: linear-gradient(135deg, #1E88E5, #42A5F5); padding: 10px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; gap: 30px;">
-            <li style="margin: 0;">
-                <a href="#home" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                    Home
-                </a>
-            </li>
-            <li style="margin: 0;">
-                <a href="#about" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                    About
-                </a>
-            </li>
-            <li style="margin: 0;">
-                <a href="#portfolio" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                    Case Studies
-                </a>
-            </li>
-            <li style="margin: 0;">
-                <a href="#blog" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                    Blog
-                </a>
-            </li>
-            <li style="margin: 0;">
-                <a href="#contact" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <ul id="nav-menu" style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+        <li style="margin: 0;">
+            <a href="#home" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
+                Home
+            </a>
+        </li>
+        <li style="margin: 0;">
+            <a href="#about" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
+                About
+            </a>
+        </li>
+        <li style="margin: 0;">
+            <a href="#portfolio" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
+                Case Studies
+            </a>
+        </li>
+        <li style="margin: 0;">
+            <a href="#blog" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
+                Blog
+            </a>
+        </li>
+        <li style="margin: 0;">
+            <a href="#contact" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">
+                Contact
+            </a>
+        </li>
+    </ul>
+</nav>
 
-    <style>
-        nav ul li a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            transform: scale(1.1);
-            color: #FFEB3B;
+<style>
+    /* Default hover effect */
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        transform: scale(1.1);
+        color: #FFEB3B;
+    }
+
+    /* Media Query for Mobile Screens */
+    @media (max-width: 768px) {
+        nav {
+            padding: 10px;
         }
-    </style>
+
+        #nav-menu {
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        #nav-menu li {
+            width: 100%; /* Make links take full width */
+        }
+
+        #nav-menu li a {
+            display: block;
+            width: 100%; /* Fill the width of the screen */
+            text-align: left; /* Align text to the left */
+            padding: 10px;
+        }
+    }
+</style>
 
     <!-- Home Section -->
  <section id="home" style="padding: 60px; background: linear-gradient(135deg, #e0f7fa, #ffffff); color: #333333; text-align: center; overflow: hidden; position: relative;">
