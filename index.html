@@ -141,15 +141,79 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to InsightEdge</h1>
-        <p>Empowering Minds, Unlocking Insights</p>
-        <p>Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in tech.</p>
-        <div class="cta">
-            <a href="#about">Learn More</a>
-            <a href="#contact">Get in Touch</a>
+   <!-- Home Section -->
+<section id="home" style="padding: 60px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); text-align: center;">
+    <!-- Logo/Image -->
+    <img src="images/loggggooo.png" alt="InsightEdge Logo" 
+        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+    <!-- Title and Tagline -->
+    <h1 style="font-size: 36px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Welcome to InsightEdge</h1>
+    <p style="font-size: 20px; font-weight: bold; color: #FF5722; margin-bottom: 20px;">Empowering Minds, Unlocking Insights</p>
+    <p style="font-size: 16px; color: #555; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+        Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in the tech industry.
+    </p>
+
+    <!-- Value Proposition Section -->
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h3 style="font-size: 18px; color: #FF5722;">Real-World Projects</h3>
+            <p style="font-size: 14px; color: #555;">Work on projects to gain practical skills.</p>
         </div>
-    </section>
+        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h3 style="font-size: 18px; color: #FF5722;">Intensive Training</h3>
+            <p style="font-size: 14px; color: #555;">3-4 months of focused learning.</p>
+        </div>
+        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h3 style="font-size: 18px; color: #FF5722;">Career-Ready Skills</h3>
+            <p style="font-size: 14px; color: #555;">Master skills for top tech roles.</p>
+        </div>
+    </div>
+
+    <!-- Course Pricing Section -->
+    <div style="margin-top: 30px; color: #222; text-align: center;">
+        <h2 style="font-size: 24px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">Affordable Pricing</h2>
+        <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Total Course Cost: <strong>₹8000</strong></p>
+        <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Pay Just ₹2000 Per Month</p>
+        <p style="font-size: 14px; color: #666; margin-top: 5px;">Flexible payment options to suit your convenience.</p>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div style="margin-top: 30px;">
+        <p style="font-size: 18px; font-weight: bold; color: #FF5722;">
+            Hurry! Enroll now and start your journey.
+        </p>
+        <p style="font-size: 16px; color: #333;">
+            Next batch starts in: <span id="timer" style="font-weight: bold; color: #FF5722;"></span>
+        </p>
+    </div>
+
+    <!-- Call-to-Actions -->
+    <div class="cta" style="margin-top: 20px;">
+        <a href="#about" style="padding: 10px 20px; background: #FF5722; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px;">Learn More</a>
+        <a href="#contact" style="padding: 10px 20px; background: #1E88E5; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Get in Touch</a>
+    </div>
+</section>
+
+<script>
+    // Countdown Timer Script
+    function countdown() {
+        const deadline = new Date("2025-02-16T00:00:00").getTime();
+        const now = new Date().getTime();
+        const diff = deadline - now;
+
+        if (diff <= 0) {
+            document.getElementById("timer").innerHTML = "Closed!";
+        } else {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+    }
+    setInterval(countdown, 1000);
+</script>
 
     <!-- About Section -->
     <section id="about">
