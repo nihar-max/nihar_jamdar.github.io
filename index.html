@@ -154,29 +154,33 @@
     </nav>
 
     <!-- Home Section -->
- <section id="home" style="padding: 60px; background: linear-gradient(135deg, #e0f7fa, #ffffff); color: #333333; text-align: center;">
+ <section id="home" style="padding: 60px; background: linear-gradient(135deg, #e0f7fa, #ffffff); color: #333333; text-align: center; overflow: hidden; position: relative;">
+    <!-- Animated Background Circles -->
+    <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: #00796b; border-radius: 50%; opacity: 0.5; animation: moveUpDown 6s ease-in-out infinite;"></div>
+    <div style="position: absolute; bottom: -50px; right: -50px; width: 150px; height: 150px; background: #0288d1; border-radius: 50%; opacity: 0.5; animation: moveLeftRight 8s ease-in-out infinite;"></div>
+
     <!-- Logo/Image -->
     <img src="images/loggggooo.png" alt="InsightEdge Logo" 
-        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); animation: fadeIn 2s ease-in-out;">
 
     <!-- Title and Tagline -->
-    <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 10px;">Welcome to InsightEdge</h1>
-    <p style="font-size: 20px; font-weight: bold; color: #00796b; margin-bottom: 20px;">Empowering Minds, Unlocking Insights</p>
-    <p style="font-size: 16px; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+    <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 10px; animation: slideInFromTop 2s ease-in-out;">Welcome to InsightEdge</h1>
+    <p style="font-size: 20px; font-weight: bold; color: #00796b; margin-bottom: 20px; animation: fadeIn 2s ease-in-out;">Empowering Minds, Unlocking Insights</p>
+    <p style="font-size: 16px; line-height: 1.6; max-width: 600px; margin: 0 auto; animation: slideInFromBottom 2s ease-in-out;">
         Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in the tech industry.
     </p>
 
     <!-- Value Proposition Section -->
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-        <div style="background-color: #ffffff; color: #333333; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="background-color: #ffffff; color: #333333; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); animation: bounce 2s infinite;">
             <h3 style="font-size: 18px; color: #00796b;">Real-World Projects</h3>
             <p style="font-size: 14px;">Work on projects to gain practical skills.</p>
         </div>
-        <div style="background-color: #ffffff; color: #333333; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="background-color: #ffffff; color: #333333; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); animation: bounce 2s 0.5s infinite;">
             <h3 style="font-size: 18px; color: #00796b;">Intensive Training</h3>
             <p style="font-size: 14px;">3-4 months of focused learning.</p>
         </div>
-        <div style="background-color: #ffffff; color: #333333; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="background-color: #ffffff; color: #333333; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); animation: bounce 2s 1s infinite;">
             <h3 style="font-size: 18px; color: #00796b;">Career-Ready Skills</h3>
             <p style="font-size: 14px;">Master skills for top tech roles.</p>
         </div>
@@ -184,7 +188,7 @@
 
     <!-- Course Pricing Section -->
     <div style="margin-top: 30px; text-align: center;">
-        <h2 style="font-size: 24px; font-weight: bold; color: #00796b; margin-bottom: 10px;">Affordable Pricing</h2>
+        <h2 style="font-size: 24px; font-weight: bold; color: #00796b; margin-bottom: 10px; animation: zoomIn 1s;">Affordable Pricing</h2>
         <p style="font-size: 16px; margin-bottom: 5px; color: #333333;">Total Course Cost: <strong>₹8000</strong></p>
         <p style="font-size: 16px; margin-bottom: 5px; color: #333333;">Pay Just ₹2000 Per Month</p>
         <p style="font-size: 14px; margin-top: 5px; color: #666666;">Flexible payment options to suit your convenience.</p>
@@ -202,8 +206,8 @@
 
     <!-- Call-to-Actions -->
     <div class="cta" style="margin-top: 20px;">
-        <a href="#about" style="padding: 10px 20px; background: #00796b; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px;">Learn More</a>
-        <a href="#contact" style="padding: 10px 20px; background: #0288d1; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Get in Touch</a>
+        <a href="#about" style="padding: 10px 20px; background: #00796b; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px; animation: pulse 2s infinite;">Learn More</a>
+        <a href="#contact" style="padding: 10px 20px; background: #0288d1; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; animation: pulse 2s infinite;">Get in Touch</a>
     </div>
 </section>
 
@@ -226,6 +230,86 @@
     }
     setInterval(countdown, 1000);
 </script>
+
+<style>
+    @keyframes moveUpDown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+    }
+
+    @keyframes moveLeftRight {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(20px);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInFromTop {
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInFromBottom {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+</style>
 
     
    <section id="about" style="padding: 60px 20px; background: #f8f9fa;">
