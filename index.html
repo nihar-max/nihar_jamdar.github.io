@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background: linear-gradient(180deg, #ffffff, #f3f4f6);
+            background-color: #f9f9f9;
         }
 
         nav {
@@ -23,7 +23,6 @@
             width: 100%;
             top: 0;
             z-index: 10;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
@@ -42,7 +41,6 @@
             color: white;
             text-decoration: none;
             font-size: 18px;
-            font-weight: bold;
         }
 
         nav ul li a:hover {
@@ -55,29 +53,23 @@
         }
 
         .home {
-            background: linear-gradient(135deg, #1E88E5, #29B6F6);
-            color: white;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             padding: 100px 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         .home img {
-            width: 200px;
+            width: 300px;
             height: auto;
             border-radius: 50%;
             margin-bottom: 20px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .portfolio img, .blog img {
-            width: 100%;
-            max-width: 300px;
+            width: 250px;
             height: auto;
             border-radius: 10px;
-            margin: 20px auto;
+            margin: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -105,19 +97,6 @@
             background: #E64A19;
         }
 
-        .portfolio, .blog {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .portfolio-item, .blog-item {
-            max-width: 300px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
         footer {
             background: #1E88E5;
             color: white;
@@ -125,13 +104,58 @@
             text-align: center;
         }
 
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+
+        .feature img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        .testimonials {
+            background: #f4f4f9;
+            padding: 50px 20px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 300px;
+        }
+
         @media (max-width: 768px) {
             .portfolio img, .blog img {
-                width: 100%;
+                width: 200px;
             }
 
             .home img {
-                width: 150px;
+                width: 200px;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 90%;
             }
         }
     </style>
@@ -153,9 +177,40 @@
         <img src="images/loggggooo.png" alt="InsightEdge Logo">
         <h1>Welcome to InsightEdge</h1>
         <p>Empowering Minds, Unlocking Insights</p>
+        <p>Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in tech.</p>
         <div class="cta">
             <a href="#about">Learn More</a>
             <a href="#contact">Get in Touch</a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <img src="images/realworld.png" alt="Real-World Projects">
+                <h3>Real-World Projects</h3>
+                <p>Work on industry-relevant projects to gain hands-on experience.</p>
+            </div>
+            <div class="feature">
+                <img src="images/mentorship.png" alt="Mentorship">
+                <h3>Expert Mentorship</h3>
+                <p>Learn directly from industry experts and seasoned professionals.</p>
+            </div>
+            <div class="feature">
+                <img src="images/certified.png" alt="Certification">
+                <h3>Certification</h3>
+                <p>Earn a recognized certificate to showcase your expertise.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 50px; color: #FF5722;">Success Stories</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p><strong>"InsightEdge helped me transition into a data science career effortlessly. Highly recommend!"</strong></p>
+                <p>- Aditi Sharma, Data Scientist</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>"The real-world projects and guidance from mentors made all the difference in my career."</strong></p>
+                <p>- Rahul Mehta, Machine Learning Engineer</p>
+            </div>
         </div>
     </section>
 
@@ -172,43 +227,33 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
         <h2>Case Studies</h2>
-        <div class="portfolio">
-            <div class="portfolio-item">
-                <img src="images/bitcoin.jpg" alt="Bitcoin Price Prediction">
-                <p>Bitcoin Price Prediction</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/ECG_IMAGE.jpg" alt="Anomaly Detection of ECG">
-                <p>Anomaly Detection of ECG</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/portfolio/TEDx-logo-image.jpg" alt="TED Talk Views Prediction">
-                <p>TED Talk Views Prediction</p>
-            </div>
+        <div>
+            <img src="images/bitcoin.jpg" alt="Bitcoin Price Prediction">
+            <p>Bitcoin Price Prediction</p>
+            <img src="images/ECG_IMAGE.jpg" alt="Anomaly Detection of ECG">
+            <p>Anomaly Detection of ECG</p>
+            <img src="images/portfolio/TEDx-logo-image.jpg" alt="TED Talk Views Prediction">
+            <p>TED Talk Views Prediction</p>
         </div>
     </section>
 
     <!-- Blog Section -->
     <section id="blog">
         <h2>Latest Blogs</h2>
-        <div class="blog">
-            <div class="blog-item">
-                <img src="images/portfolio/netflix-logo.png" alt="Netflix Data Analysis">
-                <h4>Netflix Data Analysis using Python</h4>
-                <p><a href="https://niharjamdar.medium.com/netflix-data-analysis-using-python-5ac56dd5cda1">Read More</a></p>
-            </div>
-            <div class="blog-item">
-                <img src="images/portfolio/nlp.jpg" alt="TF-IDF">
-                <h4>TF-IDF: Term Frequency and Inverse Document Frequency</h4>
-                <p><a href="https://niharjamdar.medium.com/tf-idf-term-frequency-and-inverse-document-frequency-56a0289d2fb6">Read More</a></p>
-            </div>
+        <div>
+            <img src="images/portfolio/netflix-logo.png" alt="Netflix Data Analysis">
+            <h4>Netflix Data Analysis using Python</h4>
+            <p><a href="https://niharjamdar.medium.com/netflix-data-analysis-using-python-5ac56dd5cda1">Read More</a></p>
+            <img src="images/portfolio/nlp.jpg" alt="TF-IDF">
+            <h4>TF-IDF: Term Frequency and Inverse Document Frequency</h4>
+            <p><a href="https://niharjamdar.medium.com/tf-idf-term-frequency-and-inverse-document-frequency-56a0289d2fb6">Read More</a></p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScquiIyJs4PCihol-JZmnb3CdcM0fzaSdeIdO7KlqPSxgeiTg/viewform?usp=sharing" style="width: 100%; height: 600px; border: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScquiIyJs4PCihol-JZmnb3CdcM0fzaSdeIdO7KlqPSxgeiTg/viewform?usp=sharing" style="width: 100%; height: 600px; border: none;"></iframe>
     </section>
 
     <!-- Footer -->
