@@ -4,488 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Portfolio Template</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-
-    <script>
-        // Toggle Functionality for Hamburger Menu
-        function toggleMenu() {
-            const aside = document.querySelector('.aside');
-            aside.classList.toggle('open');
-        }
-
-        // Close Menu When Clicking on a Link
-        document.addEventListener('DOMContentLoaded', () => {
-            const navLinks = document.querySelectorAll('.nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    const aside = document.querySelector('.aside');
-                    aside.classList.remove('open');
-                });
-            });
-        });
-    </script>
-
+    <title>InsightEdge - All in One</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        .aside {
-            width: 270px;
-            background-color: #fdf9ff;
-            position: fixed;
-            height: 100%;
-            left: 0;
-            top: 0;
-            z-index: 11;
-            border-right: 1px solid #e8dfec;
-            transition: all 0.3s ease;
-        }
-
-        .aside.open {
-            left: -270px;
-        }
-
-        .nav-toggler {
-            height: 40px;
-            width: 45px;
-            border: 1px solid #d4d4e3;
-            cursor: pointer;
-            position: fixed;
-            left: 300px;
-            top: 20px;
-            border-radius: 5px;
-            background-color: #fdf9ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .nav-toggler span {
-            height: 2px;
-            width: 18px;
-            display: inline-block;
-            background-color: #302e4d;
-        }
-
-        .nav-toggler.open span {
-            background-color: transparent;
-        }
-
-        .nav-toggler span::before,
-        .nav-toggler span::after {
-            content: '';
-            height: 2px;
-            width: 18px;
-            background-color: #302e4d;
-            position: absolute;
-            transition: all 0.3s ease;
-        }
-
-        .nav-toggler.open span::before {
-            transform: rotate(45deg);
-        }
-
-        .nav-toggler.open span::after {
-            transform: rotate(-45deg);
-        }
-
-        .aside .nav {
-            list-style: none;
-            margin: 80px 0;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 0;
         }
-
-        .aside .nav li {
-            display: block;
+        nav {
+            background-color: #1E88E5;
+            padding: 10px;
+            text-align: center;
         }
-
-        .aside .nav li a {
-            font-size: 16px;
-            font-weight: 600;
-            color: #302e4d;
+        nav a {
+            color: white;
             text-decoration: none;
-            line-height: 45px;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .about img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
             display: block;
-            border-bottom: 1px solid #e8dfec;
-            transition: all 0.3s ease;
         }
-
-        .aside .nav li a:hover {
-            padding-left: 5px;
+        .cta {
+            text-align: center;
+            margin-top: 30px;
         }
-
-        @media (max-width: 991px) {
-            .aside {
-                left: -270px;
-            }
-
-            .aside.open {
-                left: 0;
-            }
-
-            .nav-toggler {
-                display: flex;
-            }
+        .cta a {
+            padding: 10px 20px;
+            background: #FF5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background: #E64A19;
+        }
+        .skills img {
+            width: 60px;
+            margin: 10px;
+        }
+        .portfolio-item img {
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- Preloader End-->
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Case Studies</a>
+        <a href="#blog">Blogs</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Main Container -->
-    <div class="main-container">
-        <!-- Aside -->
-        <div class="aside">
-            <!-- Nav Toggler Btn -->
-            <div class="nav-toggler" onclick="toggleMenu()">
-                <span></span>
-            </div>
-            <!-- Nav Toggler Btn End -->
-
-            <!-- Aside inner -->
-            <div class="aside-inner">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="#">💡Edge</a>
-                </div>
-                <!-- Nav -->
-                <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#portfolio">Case Studies</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- Aside End -->
-
-        <!-- Main Content -->
-<div class="main-content">
     <!-- Home Section -->
-    <section class="home section active" id="home">
-    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 60px 20px; text-align: center; border-radius: 8px;">
-        <!-- Logo -->
-        <img src="images/loggggooo.png" alt="InsightEdge Logo" 
-             style="width: 250px; height: auto; border-radius: 50%; margin-bottom: 20px;">
-
-        <!-- Title -->
-        <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 10px; color: #1a1a1a;">InsightEdge</h1>
-
-        <!-- Tagline -->
-        <p style="font-size: 20px; font-weight: bold; color: #FF5722; margin-bottom: 20px;">
-            Empowering Minds, Unlocking Insights.
-        </p>
-
-        <!-- Description -->
-        <p style="font-size: 16px; color: #222; line-height: 1.6; max-width: 600px; margin: 0 auto;">
-            Empower your future with real-world learning and personalized guidance. Master the skills that set you apart in the tech industry.
-        </p>
-
-        <!-- Value Proposition Section -->
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-            <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 18px; color: #FF5722;">Real-World Projects</h3>
-                <p style="font-size: 14px; color: #555;">Work on projects to gain practical skills.</p>
-            </div>
-            <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 18px; color: #FF5722;">Intensive Training</h3>
-                <p style="font-size: 14px; color: #555;">3-4 months of focused learning.</p>
-            </div>
-            <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 18px; color: #FF5722;">Career-Ready Skills</h3>
-                <p style="font-size: 14px; color: #555;">Master skills for top tech roles.</p>
-            </div>
+    <section id="home" class="section">
+        <div class="container" style="text-align: center;">
+            <h1>Welcome to InsightEdge</h1>
+            <p>Your pathway to mastering data science.</p>
+            <img src="images/loggggooo.png" alt="InsightEdge Logo">
         </div>
+    </section>
 
-        <!-- Course Pricing Section -->
-        <div style="margin-top: 30px; color: #222; text-align: center;">
-            <h2 style="font-size: 24px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">Affordable Pricing</h2>
-            <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Total Course Cost: <strong>₹8000</strong></p>
-            <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Pay Just ₹2000 Per Month</p>
-            <p style="font-size: 14px; color: #666; margin-top: 5px;">Flexible payment options to suit your convenience.</p>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About InsightEdge</h2>
+            <p>InsightEdge is a premier data science academy dedicated to transforming learners into industry-ready professionals.</p>
+            <img src="images/nihar.jpeg" alt="Nihar Jamdar">
+            <h3>Nihar Jamdar</h3>
+            <h4>Founder & Data Analyst at Merkle</h4>
+            <p>Nihar Jamdar, an experienced data scientist with over 4 years in the industry, has worked extensively with Python, SQL, PySpark, and machine learning frameworks.</p>
         </div>
+    </section>
 
-        <!-- Countdown Timer -->
-        <div style="margin-top: 30px;">
-            <p style="font-size: 18px; font-weight: bold; color: #FF5722;">
-                Hurry! Enroll now and start your journey.
-            </p>
-            <p style="font-size: 16px; color: #333;">
-                Next batch starts in: <span id="timer" style="font-weight: bold; color: #FF5722;"></span>
-            </p>
-        </div>
-        <script>
-            function countdown() {
-                const deadline = new Date("2025-02-16T00:00:00").getTime();
-                const now = new Date().getTime();
-                const diff = deadline - now;
-
-                if (diff <= 0) {
-                    document.getElementById("timer").innerHTML = "Closed!";
-                } else {
-                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-                    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-                }
-            }
-            setInterval(countdown, 1000);
-        </script>
-    </div>
-
-    <!-- Footer -->
-</section>
-</div>
-<!-- Main Content End -->
-    
-            <!-- About Section End
-
-           
-
-            <!-- Portfolio Section -->
-<section class="portfolio section" id="Case Studies">
-    <div class="container">
-
-        <div class="row">
-            <div class="section-title padd-15">
-                <h2>Case Studies</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="portfolio-filter padd-15">
-                <button type="button" data-filter="Projects">Machine Learning Real World Case Studies</button>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="Case Studies">
-                <h5>BITCOIN PRICE PREDICTION</h5>
-                <img src="images/bitcoin.jpg" height="200" width="300" class="img-responsive" alt="Bitcoin Price Prediction">
-            </div> 
-
-            <div class="portfolio-item padd-15" data-category="Case Studies">
-                <h5>ANOMALY DETECTION OF ECG</h5>
-                <img src="images/ECG_IMAGE.jpg" height="200" width="300" class="img-responsive" alt="Anomaly Detection of ECG">
-            </div>
-
-            <div class="portfolio-item padd-15" data-category="Case Studies">
-                <h5>TED TALK VIEWS PREDICTION</h5>
-                <img src="images/portfolio/TEDx-logo-image.jpg" height="200" width="300" class="img-responsive" alt="TED Talk Views Prediction">
-            </div>
-
-            <div class="portfolio-item padd-15" data-category="Case Studies">
-                <h5>PERSONALISED CANCER DIAGNOSIS</h5>
-                <img src="images/cancer.jpg" height="200" width="300" class="img-responsive" alt="Personalized Cancer Diagnosisn">
-            </div>      
-
-            <div class="portfolio-item padd-15" data-category="Case Studies">
-                <h5>LENDING CLUB LOAN DEFAULTERS PREDICTION</h5>
-                <img src="images/portfolio/Default-on-Loans.jpg" height="200" width="300" class="img-responsive" alt="Loan Defaulters Prediction">
-            </div>
-
-            <div class="portfolio-item padd-15" data-category="Data Science Projects">
-                <h5>DRUG PRESCRIPTION USING REVIEWS</h5>
-                <img src="images/drug121.jpg" height="200" width="300" class="img-responsive" alt="Drug Prescription Using Reviews">
-            </div> 
-        </div>
-
-    </div>
-</section>
-<!-- Portfolio Section End -->
-
-
-            <!-- Blog Section -->
-            <section class="blog section" id="blog">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Latest Blogs</h2>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Blog Item -->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/portfolio/tesnorflow_.jpg" alt="blog">
-                                    <div class="blog-date">
-                                        25 Sep 2023
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4  class="blog-title">Multi-class Text Classification using TensorFlow</h4>
-                                    <p class="blog-description">
-                                         In this blog, I have created multiclass text classifier by computing their weights and then assigning higher weights to label with lesser data points after that using tenorFlow with weighted cross-entropy func to execute results.
-                                    </p>
-                                    <p class="blog-tags">
-                                        Blog Link : <a href="https://medium.com/p/8bb9619f51bc">Click Here</a> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Blog Item End-->
-                        <!-- Blog Item -->
-                         <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/portfolio/nlp.jpg" alt="blog">
-                                    <div class="blog-date">
-                                        11 March 2021
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4  class="blog-title">TF-IDF (Term Frequency and Inverse Document Frequency)</h4>
-                                    <p class="blog-description">
-                                        Tf-Idf- is one the Natural Language processing techniques which is used to convert words into vectors, so here i have tried to explain it will basic example with mathematical formula.
-                                    </p>
-                                    <p class="blog-tags">
-                                        Blog Link : <a href="https://niharjamdar.medium.com/tf-idf-term-frequency-and-inverse-document-frequency-56a0289d2fb6">Click Here</a> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Blog Item End-->
-                        <!-- Blog Item -->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/portfolio/netflix-logo.png" alt="blog">
-                                    <div class="blog-date">
-                                        23 Sep 2023
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4  class="blog-title">Netflix Data Analysis using Python</h4>
-                                    <p class="blog-description">
-                                        Performed Exploratory Data Analysis on Netflix Data with help of basic visualization techniques using Python libraries like Seaborn,Matplotlib etc. 
-                                    
-                                    </p>
-                                    <p class="blog-tags">
-                                        Blog Link : <a href="https://niharjamdar.medium.com/netflix-data-analysis-using-python-5ac56dd5cda1">Click Here</a> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                         <!-- Blog Item End-->
-                         <!-- Blog Item -->
-                         <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/portfolio/mnist.jpeg" alt="blog">
-                                    <div class="blog-date">
-                                        28 March 2021
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4  class="blog-title">2-D Visualization using Principal Component Analysis (PCA) on MNIST dataset</h4>
-                                    <p class="blog-description">
-                                        Principal Component Analysis is one of the technique which is used for reduction of dimension where it converts d-dimension into d' dimension where d'< d. So here i have created a blog by applying PCA on MNIST dataset to convert 784-dimensions to 2-dimension.
-                                    </p>
-                                    <p class="blog-tags">
-                                        Blog Link : <a href="https://niharjamdar.medium.com/2-d-visualization-using-principal-component-analysis-pca-on-mnist-dataset-e833ee212cc9">Click Here</a> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Blog Item End-->
-                        <!-- Blog Item -->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/portfolio/multi.jpg" alt="blog">
-                                    <div class="blog-date">
-                                        26 April 2021
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4  class="blog-title">What is MultiCollinearity and how to resolve it</h4>
-                                    <p class="blog-description">
-                                        If any of our Independent Feature (xi, xj) is internally co-related more than 90%. So how we can solve multicollinearity issues practically using Python and statistics.
-                                    </p>
-                                    <p class="blog-tags">
-                                        Blog Link : <a href="https://niharjamdar.medium.com/what-is-multicollinearity-and-how-to-resolve-it-35bef9b31fc4">Click Here</a> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Case Studies</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <h4>Bitcoin Price Prediction</h4>
+                    <img src="images/bitcoin.jpg" alt="Bitcoin Prediction">
                 </div>
-            </section>
-            <!-- Blog Section End-->
-
-
-
-
-        </div>
-        <!-- Main Content End-->
-    </div>
-    <!-- Main Container End-->
-
-    <!-- Lightbox -->
-    <div class="lightbox">
-        <div class="lightbox-content">
-            <div class="lightbox-close"><i class="fa fa-close"></i></div>
-            <img src="images/portfolio/pesantren-alandalus.com.png" alt="" class="lightbox-img" onclick="nextItem()">
-            <div class="lightbox-caption">
-                <div class="caption-text">Web design</div>
-                <div class="caption-counter">1 of 6</div>
+                <div class="portfolio-item">
+                    <h4>Anomaly Detection of ECG</h4>
+                    <img src="images/ECG_IMAGE.jpg" alt="ECG Anomaly">
+                </div>
+                <div class="portfolio-item">
+                    <h4>TED Talk Views Prediction</h4>
+                    <img src="images/portfolio/TEDx-logo-image.jpg" alt="TED Talk">
+                </div>
             </div>
         </div>
-        <div class="lightbox-controls">
-            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="blog-item">
+                <h3>Netflix Data Analysis Using Python</h3>
+                <p>Analyzed Netflix data using Python libraries like Pandas and Matplotlib. <a href="https://niharjamdar.medium.com/netflix-data-analysis-using-python-5ac56dd5cda1">Read More</a></p>
+            </div>
+            <div class="blog-item">
+                <h3>Multi-class Text Classification Using TensorFlow</h3>
+                <p>Explored TensorFlow's weighted cross-entropy for classification. <a href="https://medium.com/p/8bb9619f51bc">Read More</a></p>
+            </div>
         </div>
-    </div>
-    <!-- Lightbox End-->
+    </section>
 
-    <!-- Live Style Switcher - Demo Only -->
-    <div class="style-switcher">
-        <div class="toggle-style-switcher">
-            <i class="fa fa-cog fa-spin"></i>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for any inquiries.</p>
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScquiIyJs4PCihol-JZmnb3CdcM0fzaSdeIdO7KlqPSxgeiTg/viewform?usp=sharing"
+                style="width: 100%; height: 600px; border: none;">
+            </iframe>
         </div>
-        <h5>Style Switcher</h5>
-        <ul>
-            <li>
-                <a href="javascript:void(0);" title="pink" style="background-color:#ec1839;"
-                    onclick="setActiveStyle('pink')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="blue" style="background-color:#2196f3;"
-                    onclick="setActiveStyle('blue')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="green" style="background-color:#72b626;"
-                    onclick="setActiveStyle('green')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="orange" style="background-color:#fa5b0f;"
-                    onclick="setActiveStyle('orange')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="yellow" style="background-color:#ffb400;"
-                    onclick="setActiveStyle('yellow')"></a>
-            </li>
-        </ul>
-        
-    </div>
-    <!-- Live Style Switch - Demo Only  End-->
-
-    <!-- Template Js -->
-    <script src="js/script.js"></script>
-
-    <!-- Live Style Js - Demo Only -->
-    <script src="js/styleSwitcher.js"></script>
-
+    </section>
 </body>
-
 </html>
