@@ -143,62 +143,109 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-   <!-- Navigation Bar -->
-<nav style="background: linear-gradient(135deg, #1E88E5, #42A5F5); padding: 10px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <ul id="nav-menu" style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
-        <li style="margin: 0;">
-            <a href="#home" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Home</a>
-        </li>
-        <li style="margin: 0;">
-            <a href="#about" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">About</a>
-        </li>
-        <li style="margin: 0;">
-            <a href="#portfolio" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Case Studies</a>
-        </li>
-        <li style="margin: 0;">
-            <a href="#blog" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Blog</a>
-        </li>
-        <li style="margin: 0;">
-            <a href="#contact" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 10px 15px; transition: all 0.3s ease;">Contact</a>
-        </li>
-    </ul>
-</nav>
-
-<style>
-    /* Hover effect for links */
-    nav ul li a:hover {
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        transform: scale(1.1);
-        color: #FFEB3B;
+ <style>
+    /* General Navigation Bar Styles */
+    nav {
+        background-color: #1E88E5;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
     }
 
-    /* Media Query for Mobile Screens */
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Mobile Menu Toggle Button */
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Mobile Styles */
     @media (max-width: 768px) {
         nav {
-            position: relative; /* Removes fixed position on mobile */
-            padding: 10px;
+            position: relative;
         }
 
-        #nav-menu {
-            flex-direction: column; /* Stack items vertically */
-            align-items: flex-start;
-            gap: 10px;
-            padding: 10px;
-        }
-
-        #nav-menu li {
-            width: 100%; /* Make links take full width */
-        }
-
-        #nav-menu li a {
+        .menu-toggle {
             display: block;
-            width: 100%; /* Fill the width of the screen */
-            text-align: left; /* Align text to the left */
-            padding: 10px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            display: none;
+            background-color: #1E88E5;
+            width: 100%;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        nav ul li {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav ul.show {
+            display: flex;
         }
     }
 </style>
+
+<nav>
+    <!-- Logo or Branding -->
+    <div class="logo">
+        <a href="#" style="color: white; font-size: 24px; font-weight: bold; text-decoration: none;">Logo</a>
+    </div>
+
+    <!-- Menu Toggle Button for Mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Case Studies</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    // Toggle Menu Functionality
+    function toggleMenu() {
+        const navMenu = document.querySelector("nav ul");
+        navMenu.classList.toggle("show");
+    }
+</script>
+
 
     <!-- Home Section -->
  <section id="home" style="padding: 60px; background: linear-gradient(135deg, #e0f7fa, #ffffff); color: #333333; text-align: center; overflow: hidden; position: relative;">
