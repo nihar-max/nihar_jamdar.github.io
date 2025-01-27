@@ -154,86 +154,114 @@
     </nav>
 
     <!-- Home Section -->
-  <!-- Home Section with Animations -->
-<section id="home" style="padding: 60px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); text-align: center; position: relative; overflow: hidden;">
-    <!-- Animated Background Elements -->
-    <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: #FF5722; opacity: 0.2; border-radius: 50%; animation: float 6s ease-in-out infinite;"></div>
-    <div style="position: absolute; bottom: -50px; right: -50px; width: 300px; height: 300px; background: #1E88E5; opacity: 0.2; border-radius: 50%; animation: float 8s ease-in-out infinite;"></div>
+  <!-- Home Section -->
+<section id="home" style="padding: 80px; background: linear-gradient(135deg, #1a1a1a, #333333); color: #ffffff; text-align: center; position: relative; overflow: hidden;">
+    <!-- Animated Background Circles -->
+    <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255, 87, 34, 0.5); border-radius: 50%; animation: moveCircle1 6s linear infinite;"></div>
+    <div style="position: absolute; bottom: -80px; right: -80px; width: 300px; height: 300px; background: rgba(33, 150, 243, 0.5); border-radius: 50%; animation: moveCircle2 8s linear infinite;"></div>
 
     <!-- Logo/Image -->
     <img src="images/loggggooo.png" alt="InsightEdge Logo" 
-        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); animation: fadeIn 2s ease forwards;">
-
+        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); animation: fadeInLogo 1.5s ease-in-out;">
+    
     <!-- Title and Tagline -->
-    <h1 style="font-size: 36px; font-weight: bold; color: #2c3e50; margin-bottom: 10px; animation: slideIn 1.5s ease forwards;">Welcome to InsightEdge</h1>
-    <p style="font-size: 20px; font-weight: bold; color: #FF5722; margin-bottom: 20px; animation: slideIn 1.8s ease forwards;">Empowering Minds, Unlocking Insights</p>
-    <p style="font-size: 16px; color: #555; line-height: 1.6; max-width: 600px; margin: 0 auto; animation: fadeIn 2s ease forwards;">
+    <h1 style="font-size: 48px; font-weight: bold; margin-bottom: 10px; animation: slideInDown 2s;">Welcome to InsightEdge</h1>
+    <p style="font-size: 22px; font-weight: bold; color: #FF5722; margin-bottom: 20px; animation: fadeInTagline 2.5s;">Empowering Minds, Unlocking Insights</p>
+    <p style="font-size: 18px; line-height: 1.6; max-width: 600px; margin: 0 auto; animation: fadeInContent 3s;">
         Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in the tech industry.
     </p>
 
     <!-- Value Proposition Section -->
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; animation: fadeInUp 2s ease forwards;">
-        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px;">
+        <div style="background-color: #222; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); animation: fadeInUp 3.5s;">
             <h3 style="font-size: 18px; color: #FF5722;">Real-World Projects</h3>
-            <p style="font-size: 14px; color: #555;">Work on projects to gain practical skills.</p>
+            <p style="font-size: 16px; color: #ccc;">Work on projects to gain practical skills.</p>
         </div>
-        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+        <div style="background-color: #222; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); animation: fadeInUp 4s;">
             <h3 style="font-size: 18px; color: #FF5722;">Intensive Training</h3>
-            <p style="font-size: 14px; color: #555;">3-4 months of focused learning.</p>
+            <p style="font-size: 16px; color: #ccc;">3-4 months of focused learning.</p>
         </div>
-        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+        <div style="background-color: #222; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); animation: fadeInUp 4.5s;">
             <h3 style="font-size: 18px; color: #FF5722;">Career-Ready Skills</h3>
-            <p style="font-size: 14px; color: #555;">Master skills for top tech roles.</p>
+            <p style="font-size: 16px; color: #ccc;">Master skills for top tech roles.</p>
         </div>
     </div>
 
     <!-- Course Pricing Section -->
-    <div style="margin-top: 30px; color: #222; text-align: center; animation: fadeIn 2.5s ease forwards;">
-        <h2 style="font-size: 24px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">Affordable Pricing</h2>
-        <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Total Course Cost: <strong>₹8000</strong></p>
-        <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Pay Just ₹2000 Per Month</p>
-        <p style="font-size: 14px; color: #666; margin-top: 5px;">Flexible payment options to suit your convenience.</p>
+    <div style="margin-top: 30px; text-align: center; animation: fadeInPricing 5s;">
+        <h2 style="font-size: 28px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">Affordable Pricing</h2>
+        <p style="font-size: 18px; color: #ccc; margin-bottom: 5px;">Total Course Cost: <strong>₹8000</strong></p>
+        <p style="font-size: 18px; color: #ccc; margin-bottom: 5px;">Pay Just ₹2000 Per Month</p>
+        <p style="font-size: 14px; color: #aaa; margin-top: 5px;">Flexible payment options to suit your convenience.</p>
+    </div>
+
+    <!-- Countdown Timer Section -->
+    <div style="margin-top: 30px; animation: fadeInPricing 5.5s;">
+        <p style="font-size: 18px; font-weight: bold; color: #FF5722;">
+            Hurry! Enroll now and start your journey.
+        </p>
+        <p style="font-size: 16px; color: #ccc;">
+            Next batch starts in: <span id="timer" style="font-weight: bold; color: #FF5722;"></span>
+        </p>
     </div>
 
     <!-- Call-to-Actions -->
-    <div class="cta" style="margin-top: 20px; animation: fadeInUp 3s ease forwards;">
-        <a href="#about" style="padding: 10px 20px; background: #FF5722; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px;">Learn More</a>
-        <a href="#contact" style="padding: 10px 20px; background: #1E88E5; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Get in Touch</a>
+    <div class="cta" style="margin-top: 20px;">
+        <a href="#about" style="padding: 12px 24px; background: #FF5722; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px; transition: all 0.3s ease; animation: fadeInCTA 6s;">Learn More</a>
+        <a href="#contact" style="padding: 12px 24px; background: #1E88E5; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s ease; animation: fadeInCTA 6.5s;">Get in Touch</a>
     </div>
 </section>
 
-<!-- Keyframe Animations -->
+<!-- Timer Script -->
+<script>
+    function countdown() {
+        const deadline = new Date("2025-02-16T00:00:00").getTime();
+        const now = new Date().getTime();
+        const diff = deadline - now;
+
+        if (diff <= 0) {
+            document.getElementById("timer").innerHTML = "Closed!";
+        } else {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % 1000) / 1000);
+            document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+    }
+    setInterval(countdown, 1000);
+</script>
+
+<!-- Add Keyframe Animations -->
 <style>
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
+@keyframes moveCircle1 {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(20px); }
+    100% { transform: translateY(0) translateX(0); }
+}
 
-    @keyframes fadeInUp {
-        0% { opacity: 0; transform: translateY(20px); }
-        100% { opacity: 1; transform: translateY(0); }
-    }
+@keyframes moveCircle2 {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(20px) translateX(-20px); }
+    100% { transform: translateY(0) translateX(0); }
+}
 
-    @keyframes slideIn {
-        0% { opacity: 0; transform: translateX(-50px); }
-        100% { opacity: 1; transform: translateX(0); }
-    }
+@keyframes fadeInLogo {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
 
-    @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(20px); }
-    }
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-    .cta a:hover {
-        background: #E64A19;
-        transform: scale(1.05);
-    }
-
-    div:hover {
-        transform: scale(1.05);
-    }
+@keyframes fadeInTagline, fadeInContent, fadeInPricing, fadeInCTA, fadeInUp {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 </style>
-
+    
    <section id="about" style="padding: 60px 20px; background: #f8f9fa;">
     <!-- Centralized Container -->
     <div style="max-width: 800px; margin: 0 auto; text-align: center;">
