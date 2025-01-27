@@ -154,49 +154,49 @@
     </nav>
 
     <!-- Home Section -->
-   <!-- Home Section -->
-<section id="home" style="padding: 60px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); text-align: center;">
+   <!-- Home Section with Parallax Effect -->
+<section id="home" style="padding: 60px; background: url('images/parallax-background.jpg') no-repeat center center fixed; background-size: cover; text-align: center; color: white;">
     <!-- Logo/Image -->
     <img src="images/loggggooo.png" alt="InsightEdge Logo" 
-        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        style="width: 200px; height: auto; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
 
     <!-- Title and Tagline -->
-    <h1 style="font-size: 36px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Welcome to InsightEdge</h1>
-    <p style="font-size: 20px; font-weight: bold; color: #FF5722; margin-bottom: 20px;">Empowering Minds, Unlocking Insights</p>
-    <p style="font-size: 16px; color: #555; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+    <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 10px;">Welcome to InsightEdge</h1>
+    <p style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">Empowering Minds, Unlocking Insights</p>
+    <p style="font-size: 16px; line-height: 1.6; max-width: 600px; margin: 0 auto;">
         Join our academy to gain industry-ready skills, work on real-world projects, and unlock your career potential in the tech industry.
     </p>
 
     <!-- Value Proposition Section -->
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <h3 style="font-size: 18px; color: #FF5722;">Real-World Projects</h3>
-            <p style="font-size: 14px; color: #555;">Work on projects to gain practical skills.</p>
+            <p style="font-size: 14px; color: #333;">Work on projects to gain practical skills.</p>
         </div>
-        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <h3 style="font-size: 18px; color: #FF5722;">Intensive Training</h3>
-            <p style="font-size: 14px; color: #555;">3-4 months of focused learning.</p>
+            <p style="font-size: 14px; color: #333;">3-4 months of focused learning.</p>
         </div>
-        <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <h3 style="font-size: 18px; color: #FF5722;">Career-Ready Skills</h3>
-            <p style="font-size: 14px; color: #555;">Master skills for top tech roles.</p>
+            <p style="font-size: 14px; color: #333;">Master skills for top tech roles.</p>
         </div>
     </div>
 
     <!-- Course Pricing Section -->
-    <div style="margin-top: 30px; color: #222; text-align: center;">
-        <h2 style="font-size: 24px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">Affordable Pricing</h2>
-        <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Total Course Cost: <strong>₹8000</strong></p>
-        <p style="font-size: 16px; color: #333; margin-bottom: 5px;">Pay Just ₹2000 Per Month</p>
-        <p style="font-size: 14px; color: #666; margin-top: 5px;">Flexible payment options to suit your convenience.</p>
+    <div style="margin-top: 30px; text-align: center;">
+        <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Affordable Pricing</h2>
+        <p style="font-size: 16px; margin-bottom: 5px;">Total Course Cost: <strong>₹8000</strong></p>
+        <p style="font-size: 16px; margin-bottom: 5px;">Pay Just ₹2000 Per Month</p>
+        <p style="font-size: 14px; margin-top: 5px;">Flexible payment options to suit your convenience.</p>
     </div>
 
     <!-- Countdown Timer -->
     <div style="margin-top: 30px;">
-        <p style="font-size: 18px; font-weight: bold; color: #FF5722;">
+        <p style="font-size: 18px; font-weight: bold;">
             Hurry! Enroll now and start your journey.
         </p>
-        <p style="font-size: 16px; color: #333;">
+        <p style="font-size: 16px;">
             Next batch starts in: <span id="timer" style="font-weight: bold; color: #FF5722;"></span>
         </p>
     </div>
@@ -220,8 +220,8 @@
         } else {
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            const minutes = Math.floor((diff % (1000 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000)) / 1000);
             document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
         }
     }
